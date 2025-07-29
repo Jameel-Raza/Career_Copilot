@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional Resume</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; margin: 40px; }
+        .container { width: 80%; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #0056b3; }
+        .section { margin-bottom: 20px; }
+        .section-title { border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-bottom: 10px; }
+        ul { list-style: none; padding: 0; }
+        ul li { margin-bottom: 5px; }
+        .job-title { font-weight: bold; }
+        .company-name { font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ name }}</h1>
+        <p>Email: example@example.com | Phone: 123-456-7890 | LinkedIn: linkedin.com/in/{{ name|lower|replace(" ", "") }}</p>
+
+        <div class="section">
+            <h2 class="section-title">Summary</h2>
+            <p>A highly motivated and results-oriented professional with experience in {{ experience }}. Possesses strong skills in {{ skills }}.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <p class="job-title">Job Title</p>
+            <p class="company-name">Company Name | City, State</p>
+            <p>Dates of Employment</p>
+            <ul>
+                <li>Responsible for {{ experience }} deliverables.</li>
+                <li>Achieved significant results in {{ skills }} projects.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+        </div>
+        <ul>
+            {% for skill in skills.split(',') %}
+            <li>{{ skill.strip() }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,6 @@
+crewai
+litellm
+python-dotenv
+uvicorn
+fastapi
+google-generativeai
