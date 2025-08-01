@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Resume</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #4CAF50; /* Green */
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-content {
+            width: 70%;
+            padding: 40px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #555;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        ul li::before {
+            content: '•';
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .experience-item .date {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-item {
+            background-color: #e8f5e9; /* Light green */
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>[Your Name]</h2>
+            <p class="contact-info">[Email]</p>
+            <p class="contact-info">[Phone]</p>
+            <p class="contact-info">[LinkedIn]</p>
+            <p class="contact-info">[Portfolio]</p>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-item">[Skill 1]</span>
+                    <span class="skill-item">[Skill 2]</span>
+                    <span class="skill-item">[Skill 3]</span>
+                    <span class="skill-item">[Skill 4]</span>
+                    <span class="skill-item">[Skill 5]</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>[Degree Name]</strong><br>[University Name]<br>[Graduation Year]</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h1>[Job Title/Profession]</h1>
+                <h2>Summary</h2>
+                <p>Creative and passionate professional with [X] years of experience in [Your Field]. Specializing in [Key Area], with a strong track record of [Achievement 1] and [Achievement 2]. Committed to bringing innovative solutions and fresh perspectives to challenging projects.</p>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>[Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                    <p><strong>[Company Name]</strong>, [City, State]</p>
+                    <ul>
+                        <li>[Responsibility/Achievement 1 with creative flair]</li>
+                        <li>[Responsibility/Achievement 2 demonstrating impact]</li>
+                        <li>[Responsibility/Achievement 3 showcasing unique skills]</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>[Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                    <p><strong>[Company Name]</strong>, [City, State]</p>
+                    <ul>
+                        <li>[Responsibility/Achievement 1]</li>
+                        <li>[Responsibility/Achievement 2]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

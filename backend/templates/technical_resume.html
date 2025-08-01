@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Resume</title>
+    <style>
+        body {
+            font-family: 'Fira Code', 'Consolas', 'Monaco', monospace; /* Monospace font for technical feel */
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 30px 40px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .sub-heading {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.6em;
+            color: #3498db; /* Blue for section headers */
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 18px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 18px;
+            color: #444;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 0.95em;
+        }
+        .contact-info p {
+            margin: 3px 0;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .experience-item .date {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+        }
+        .tech-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .skill-category {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #34495e;
+        }
+        .skill-list {
+            margin-left: 15px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>[Your Name]</h1>
+        <p class="sub-heading">[Your Technical Role/Specialization]</p>
+        <div class="contact-info">
+            <p>[Email] | [Phone] | [GitHub] | [LinkedIn] | [Portfolio]</p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Highly skilled and passionate software engineer with [X] years of experience in designing, developing, and deploying robust and scalable applications. Proficient in [Programming Language 1] and [Programming Language 2], with expertise in [Framework/Technology 1] and [Framework/Technology 2]. Committed to writing clean, efficient code and solving complex technical challenges.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="tech-skills-grid">
+                <div>
+                    <p class="skill-category">Languages:</p>
+                    <ul class="skill-list">
+                        <li>Python, JavaScript, Java, C++</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="skill-category">Frameworks:</p>
+                    <ul class="skill-list">
+                        <li>React, Node.js, Django, Spring Boot</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="skill-category">Databases:</p>
+                    <ul class="skill-list">
+                        <li>SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Redis)</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="skill-category">Tools & Platforms:</p>
+                    <ul class="skill-list">
+                        <li>Git, Docker, Kubernetes, AWS, Azure, CI/CD</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="skill-category">Concepts:</p>
+                    <ul class="skill-list">
+                        <li>RESTful APIs, Microservices, Agile/Scrum, Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>[Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                <p><strong>[Company Name]</strong>, [City, State]</p>
+                <ul>
+                    <li>Developed and maintained [Type of Application/System], utilizing [Technologies Used], which led to [Quantifiable Improvement/Result].</li>
+                    <li>Implemented [Feature/Module] from concept to deployment, improving [Metric] by [Percentage] and enhancing [Aspect].</li>
+                    <li>Collaborated with cross-functional teams to troubleshoot and resolve complex technical issues, reducing [Issue] by [Percentage].</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>[Previous Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                <p><strong>[Previous Company Name]</strong>, [City, State]</p>
+                <ul>
+                    <li>[Key Technical Responsibility/Achievement 1]</li>
+                    <li>[Key Technical Responsibility/Achievement 2]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>[Degree Name] <span class="date">[Graduation Year]</span></h3>
+                <p><strong>[University Name]</strong>, [City, State]</p>
+                <p>Major: [Your Major]</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

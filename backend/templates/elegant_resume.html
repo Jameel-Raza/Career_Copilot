@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Resume</title>
+    <style>
+        body {
+            font-family: 'Lora', serif; /* Elegant serif font */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light background */
+            color: #444;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            border: 1px solid #ddd; /* Soft border */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            border-radius: 5px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif; /* Distinct header font */
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .tagline {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.7em;
+            color: #555;
+            border-bottom: 1px solid #eee; /* Subtle border */
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #666;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            color: #777;
+        }
+        .contact-info p {
+            margin: 3px 0;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 7px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: '•'; /* Simple bullet */
+            color: #999; /* Soft grey bullet */
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+        .experience-item {
+            margin-bottom: 25px;
+        }
+        .experience-item h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .experience-item .date {
+            font-size: 0.9em;
+            color: #888;
+            font-style: italic;
+        }
+        .company-name {
+            font-weight: bold;
+            margin-bottom: 3px;
+            display: block;
+            color: #555;
+        }
+        .light-icon {
+            font-family: 'Font Awesome 5 Free'; /* Placeholder for minimal icons */
+            font-weight: 900;
+            margin-right: 5px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- For icons, if needed, would link to CDN, but avoiding external dependencies for now -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>[Your Full Name]</h1>
+        <p class="tagline">[Your Professional Tagline or Specialization]</p>
+        <div class="contact-info">
+            <p><span class="light-icon">&#xf0e0;</span> [Email Address]</p>
+            <p><span class="light-icon">&#xf095;</span> [Phone Number]</p>
+            <p><span class="light-icon">&#xf08c;</span> [LinkedIn Profile]</p>
+            <p><span class="light-icon">&#xf0ac;</span> [Portfolio/Website]</p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>An elegant and dedicated professional with [X] years of experience in [Your Field]. Possessing a keen eye for detail and a commitment to excellence, I specialize in [Key Area 1] and [Key Area 2]. My strong analytical and communication skills enable me to [Quantifiable Achievement 1] and [Quantifiable Achievement 2], driving successful outcomes.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>[Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                <span class="company-name">[Company Name]</span>, [City, State]
+                <ul>
+                    <li>[Key Responsibility/Achievement 1 focusing on impact and results]</li>
+                    <li>[Key Responsibility/Achievement 2, e.g., streamlined processes, enhanced client relations]</li>
+                    <li>[Key Responsibility/Achievement 3 showcasing refined skills]</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>[Previous Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                <span class="company-name">[Previous Company Name]</span>, [City, State]
+                <ul>
+                    <li>[Key Responsibility/Achievement 1]</li>
+                    <li>[Key Responsibility/Achievement 2]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>[Degree Name] <span class="date">[Graduation Year]</span></h3>
+                <p><strong>[University Name]</strong>, [City, State]</p>
+                <p>Major: [Your Major]</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Core Skills:</strong> [Skill 1], [Skill 2], [Skill 3]</li>
+                <li><strong>Tools:</strong> [Tool 1], [Tool 2]</li>
+                <li><strong>Languages:</strong> [Language 1], [Language 2]</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

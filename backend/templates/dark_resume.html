@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #e0e0e0; /* Bright text */
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #2a2a2a;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #00bcd4; /* Cyan for name */
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #ff9800; /* Orange for section headers */
+            font-size: 1.8em;
+            border-bottom: 2px solid #555;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #a7d9f2; /* Light blue for sub-headers */
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: '►';
+            color: #00bcd4; /* Cyan bullet */
+            position: absolute;
+            left: 0;
+        }
+        .experience-item {
+            margin-bottom: 25px;
+        }
+        .experience-item h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .experience-item .date {
+            font-size: 0.9em;
+            color: #bbb;
+            font-style: italic;
+        }
+        .company-location {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[Your Full Name]</h1>
+        <div class="contact-info">
+            <p>[Email Address] | [Phone Number] | [LinkedIn Profile] | [Portfolio Link]</p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Dynamic and dedicated professional with [X] years of experience in [Your Field]. Specializing in [Key Area 1] and [Key Area 2], with a proven ability to [Key Skill 1] and achieve [Quantifiable Result]. Eager to apply strong problem-solving skills and technical expertise in a challenging environment.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>[Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                <span class="company-location">[Company Name], [City, State]</span>
+                <ul>
+                    <li>[Key Responsibility/Achievement 1 with impact]</li>
+                    <li>[Key Responsibility/Achievement 2, e.g., improved process X by Y%]</li>
+                    <li>[Key Responsibility/Achievement 3, e.g., developed Z solution]</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>[Previous Job Title] <span class="date">[Start Date] – [End Date]</span></h3>
+                <span class="company-location">[Previous Company Name], [City, State]</span>
+                <ul>
+                    <li>[Key Responsibility/Achievement 1]</li>
+                    <li>[Key Responsibility/Achievement 2]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>[Degree Name] <span class="date">[Graduation Year]</span></h3>
+                <p><strong>[University Name]</strong>, [City, State]</p>
+                <p>Major: [Your Major]</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Technical Skills:</strong> [Skill 1], [Skill 2], [Skill 3], [Skill 4]</li>
+                <li><strong>Tools & Technologies:</strong> [Tool 1], [Tool 2], [Tool 3]</li>
+                <li><strong>Soft Skills:</strong> [Skill 5], [Skill 6]</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

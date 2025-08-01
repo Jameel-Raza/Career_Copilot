@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Resume</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Modern sans-serif */
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-family: 'Oswald', sans-serif; /* Stronger heading font */
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+        .tagline {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8em;
+            color: #e67e22; /* Orange for freelancer theme */
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #444;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            color: #777;
+        }
+        .contact-info p {
+            margin: 3px 0;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: '★'; /* Star bullet for creativity/highlight */
+            color: #e67e22;
+            position: absolute;
+            left: 0;
+            font-size: 1.1em;
+            line-height: 1;
+        }
+        .project-item {
+            margin-bottom: 25px;
+            border-left: 3px solid #f39c12; /* Accent border */
+            padding-left: 15px;
+        }
+        .project-item h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .project-item .date {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+        }
+        .client-testimonial {
+            background-color: #fef5eb; /* Light orange background */
+            border-left: 5px solid #e67e22;
+            padding: 15px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+            font-size: 0.95em;
+        }
+        .client-name {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            display: block;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-item {
+            background-color: #f1c40f; /* Yellow accent */
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>[Your Freelancer Name]</h1>
+        <p class="tagline">[Your Freelance Specialization / Expertise]</p>
+        <div class="contact-info">
+            <p>[Email] | [Phone] | [Portfolio Website] | [Upwork/Fiverr Profile]</p>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>A highly adaptable and results-driven freelancer with [X] years of experience in [Your Primary Skill]. I thrive on delivering high-quality solutions for diverse clients, specializing in [Niche Area 1] and [Niche Area 2]. My focus is on clear communication, efficient project management, and exceeding client expectations.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-item">[Skill 1]</span>
+                <span class="skill-item">[Skill 2]</span>
+                <span class="skill-item">[Skill 3]</span>
+                <span class="skill-item">[Skill 4]</span>
+                <span class="skill-item">[Skill 5]</span>
+                <span class="skill-item">[Skill 6]</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Featured Projects</h2>
+            <div class="project-item">
+                <h3>[Project Title] <span class="date">[Month Year]</span></h3>
+                <p><strong>Client:</strong> [Client Name/Type]</p>
+                <p><em>[Brief description of the project and your role.]</em></p>
+                <ul>
+                    <li>[Achievement 1: e.g., "Developed a custom e-commerce solution that increased sales by 20%."]</li>
+                    <li>[Achievement 2: e.g., "Managed full project lifecycle from concept to deployment, ensuring on-time delivery."]</li>
+                </ul>
+                <p><strong>Technologies:</strong> [Tech 1], [Tech 2], [Tech 3]</p>
+            </div>
+            <div class="project-item">
+                <h3>[Another Project Title] <span class="date">[Month Year]</span></h3>
+                <p><strong>Client:</strong> [Client Name/Type]</p>
+                <p><em>[Brief description of the project and your role.]</em></p>
+                <ul>
+                    <li>[Achievement 1]</li>
+                    <li>[Achievement 2]</li>
+                </ul>
+                <p><strong>Technologies:</strong> [Tech 1], [Tech 2]</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Client Testimonials</h2>
+            <div class="client-testimonial">
+                <p>"[Client Testimonial 1 - e.g., 'Exceptional quality of work and highly responsive communication. Our project was a huge success because of [Your Name]!']"</p>
+                <span class="client-name">– [Client Name], [Client Title/Company]</span>
+            </div>
+            <div class="client-testimonial">
+                <p>"[Client Testimonial 2]"</p>
+                <span class="client-name">– [Client Name]</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="project-item">
+                <h3>[Role] at [Company/Organization] <span class="date">[Start Date] – [End Date]</span></h3>
+                <ul>
+                    <li>[Key responsibility or achievement]</li>
+                    <li>[Another responsibility or achievement]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>[Degree Name] <span class="date">[Graduation Year]</span></h3>
+                <p><strong>[University Name]</strong>, [City, State]</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
