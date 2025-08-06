@@ -26,7 +26,10 @@ app.add_middleware(
 # Input model
 class ResumeRequest(BaseModel):
     name: str
+    email: str
+    education: str
     skills: list[str]
+    projects: str
     experience: str
     template: str
 
@@ -66,7 +69,7 @@ def generate_documents(data: ResumeRequest):
 
         # 3. Prompt Template
         prompt_template = PromptTemplate(
-            input_variables=["name", "skills", "experience", "template", "context"],
+            input_variables=["name", "email", "education", "skills", "projects", "experience", "template", "context"],
             template="""
             You are an expert AI resume writer. Your primary goal is to generate a professional resume strictly following the provided HTML structure and style.
 
@@ -76,7 +79,10 @@ def generate_documents(data: ResumeRequest):
             Now generate a professional resume in valid HTML based on the user's inputs:
 
             - Name: {name}
+            - Email: {email}
+            - Education: {education}
             - Skills: {skills}
+            - Projects: {projects}
             - Experience: {experience}
             - Template style: {template}
 
@@ -88,7 +94,10 @@ def generate_documents(data: ResumeRequest):
         chain = prompt_template | llm
         result = chain.invoke({
             "name": data.name,
+            "email": data.email,
+            "education": data.education,
             "skills": ", ".join(data.skills),
+            "projects": data.projects,
             "experience": data.experience,
             "template": data.template,
             "context": retrieved_text
